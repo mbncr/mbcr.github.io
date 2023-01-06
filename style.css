@@ -17,6 +17,11 @@ height: auto;
 max-width: 100px;
 }
 .profile-name {
+font-family: 'aga_kyrawan_v.2_regular';
+src: url('assets/font/agakyrawanv2qyrwn-a836-webfont.woff2') format('woff2'),
+     url('assets/font/agakyrawanv2qyrwn-a836-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 text-align: center;
 padding: 30px;
 }
@@ -49,9 +54,14 @@ background: #fff;
 }
 
 /*popup*/
+.modal-close{
+  text-align:center;
+  background-color:#ccc;
+  color:black;
+  }
 .modal-window {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   top: 0;
   right: 0;
   bottom: 0;
@@ -67,12 +77,13 @@ background: #fff;
     pointer-events: auto;
   }
   & > div {
-    width: 400px;
+    width: 50%;
     position: absolute;
     top: 50%;
+    line-height:40px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
-    background: white;
+    background: #222;
   }
 }
